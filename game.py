@@ -43,7 +43,7 @@ maca.fill((255, 0, 0)) # cor
 while True:
 
     #velocidade de movimentação
-    clock.tick(20)
+    clock.tick(15)
 
     # eventos do jogo
     for event in pygame.event.get():
@@ -86,7 +86,7 @@ while True:
 
 
     screen.fill((0,0,0)) # limpa a tela
-    screen.blit((maca, maca_posicao)) # desenha a maçã na tea
+    screen.blit(maca, maca_posicao) # desenha a maçã na tea
 
     for posicao in cobrinha:
         screen.blit(cobrinha_skin,posicao) # desenha a cobrinha em cada posição
