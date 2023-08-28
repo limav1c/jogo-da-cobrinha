@@ -1,9 +1,9 @@
 from config import *
 
 class Jogador(db.Model):
-    id = db.Columm(db.Integer, primary_key=True)
-    nome = db.Columm(db.Text)
-    macas_coletadas = db.Columm(db.Integer, default=0)
+    id = db.Column(db.Integer, primary_key=True)
+    nome = db.Column(db.Text)
+    macas_coletadas = db.Column(db.Integer, default=0)
 
     def coletar_maca(self):
         self.macas_coletadas += 1
