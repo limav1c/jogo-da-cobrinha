@@ -71,16 +71,16 @@ while True:
         cobrinha[i] = (cobrinha[i-1][0], cobrinha[i-1][1]) # toma posição da cauda anterior
 
     # posicoes da cobrinha
-    if posicao == cima: 
+    if direcao == cima: 
         # quando for pra cima, a posição y diminui
         cobrinha[0] = (cobrinha[0][0], cobrinha[0][1] - 10)
-    if posicao == baixo:
+    if direcao == baixo:
         # quando for pra baixo, a posição y aumenta
         cobrinha[0] = (cobrinha[0][0], cobrinha[0][1] + 10)
-    if posicao == direita:
+    if direcao == direita:
         # quando for pra direita, a posição x aumenta 
         cobrinha[0] = (cobrinha[0][0]  + 10, cobrinha[0][1])
-    if posicao == esquerda: 
+    if direcao == esquerda: 
         # quando for pra esquerda, a posição y diminui
         cobrinha[0] = (cobrinha[0][0] - 10, cobrinha[0][1])
 
