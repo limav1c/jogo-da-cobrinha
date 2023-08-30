@@ -39,7 +39,7 @@ maca_posicao = (random.randint(0, 790), random.randint(0, 790)) # limites da tel
 maca = pygame.Surface((10,10)) # tamanho e largura da maçã
 maca.fill((255, 0, 0)) # cor
 
-fonte = pygame.font.Font('freesansbold.ttf', 18)
+fonte = pygame.font.Font('BlackOpsOne-Regular.ttf', 20)
 pontuacao = 0
 
 game_over = False
@@ -120,7 +120,7 @@ while not game_over:
     pygame.display.update()
 
 while True:
-    game_over_fonte = pygame.font.Font('freesansbold.ttf', 75)
+    game_over_fonte = pygame.font.Font('BlackOpsOne-Regular.ttf', 75)
     game_over_screen = game_over_font.render('Game Over', True, (255, 255, 255)) # desenha o game over na tela
     game_over_rect = game_over_screen.get_rect() # alinha o game over na tela do jogo
     game_over_rect.midtop = (800 / 2, 10) # posição do game over na telado jogo
